@@ -11,19 +11,19 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 </head>
-<body>    
-        <div class="container-fluid bg-warning">
+<body>   
+        <div class="container-fluid bg-info">   
             <div class="row">
                 <div class="col-12">
                     <header class="d-flex">
-                        <div class="col-6">
+                        <div style="margin-right:5px" class="col-3">
                             <h1>Bienvenido: <?php echo $_SESSION['nombre']; ?> </a></h1> 
                         </div>
-                        <div class="col-6">
-                            <h3 class=text-end><a href="cerrar.php">Cerrar sesión</a></h3>
-                            <h3 style="text-align:left;">Lista de Alumnos</h3>
+                        <div style="margin-left:360px" class="col-8">
+                            <h4   style="margin-right:205px" class=text-end><a href="cerrar.php" class="text-danger">Cerrar sesión</a></h4>
+                            <h3 style="text-align:start;">Lista de Alumnos</h3>
                         </div>
                     </header>
-                </div>
+                </div>                
             </div> 
         </div>

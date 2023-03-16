@@ -3,6 +3,7 @@
     if (isset($_SESSION['nombre'])) {
         header('Location: index.php');
     }
+
 ?>
 
 <!doctype html>
@@ -18,27 +19,27 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <style type="text/css">
-        body {
-            background:antiquewhite;
-        }        
-    </style>
 
 </head>
-<body bgcolor="gray">
+<body background="template/imagen2.png">
+    <center>  
+      <h3 style="margin-bottom:10px;">Iniciar sisión</h3>
+        <form method="POST" action="loginProceso.php">        
+          <table>
+            <tr>
+              <input type="text" name="txtUsu" placeholder="Usuario" style="margin-bottom: 3px;">
+            </tr>
+            <br>                
+            <tr>
+               <input type="password" name="txtPass" placeholder="Password">
+            </tr>            
+          </table>
+          <br>
+          <button type="submit" class="btn btn-info">Iniciar sesión</button>
+        </form>
 
-    <div align='center' style="color:black;">
-        <form method="POST" action="loginProceso.php">
-            <label> <h3> Usuario: </h3></label>
-            <input type="text" name="txtUsu">
-            <br>
-            <label> <h3> Password: </h3></label>
-            <input type="password" name="txtPass">
-            <br>
-            <button type="submit" class="btn btn-info">Iniciar sesión</button>
-    </div>   
 
-
+    </center>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -48,19 +49,7 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-   
-            
+</html>           
         </form>
     </center>
 </body>

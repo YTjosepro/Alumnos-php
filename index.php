@@ -18,7 +18,7 @@
         <table>
             <div class="container-fluid" style="color:bisque">
                 <tr>
-                    <td>Código</td>
+                    <td margin-right:10px>Código</td>
                     <td>Apellido paterno</td>
                     <td>Apellido materno</td>
                     <td>Nombre</td>
