@@ -14,13 +14,13 @@
 <body>   
         <div class="container-fluid bg-info">   
             <div class="row">
-                <div class="col-12">
+                <div class="col-10">
                     <header class="d-flex">
-                        <div style="margin-right:5px" class="col-3">
+                        <div style="margin-right:320px" class="col-3">
                             <h1>Bienvenido: <?php echo $_SESSION['nombre']; ?> </a></h1> 
                         </div>
-                        <div style="margin-left:360px" class="col-8">
-                            <h4   style="margin-right:205px" class=text-end><a href="cerrar.php" class="text-danger">Cerrar sesión</a></h4>
+                        <div style="margin-left:132px" class="col-8">
+                            <h4   style="margin-right:0px" class=text-end><a href="cerrar.php" class="text-danger">Cerrar sesión</a></h4>
                             <h3 style="text-align:start;">Lista de Alumnos</h3>
                         </div>
                     </header>

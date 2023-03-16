@@ -11,61 +11,12 @@
         echo "Error en el sistema";
     }
 
-    include 'template/header.php'
-   
-?>
-    <center>
-        <table>
-            <div class="container-fluid" style="color:bisque">
-                <tr>
-                    <td margin-right:10px>Código</td>
-                    <td>Apellido paterno</td>
-                    <td>Apellido materno</td>
-                    <td>Nombre</td>
-                    <td>Parcial</td>
-                    <td>Final</td>
-                    <td>Promedio</td>
-                    <td>Ediatar</td>
-                    <td>Eliminar</td>
-                </tr>
-            </div>
-            <?php
-            foreach ($estudiantes as $dato) {
-                ?>
-                <div class="container-fluid" style="color:bisque">
-                    <tr>
-                        <td>
-                            <?php echo $dato-> id_alumno; ?>
-                        </td>
-                        <td>
-                            <?php echo $dato-> ap_paterno; ?>
-                        </td>
-                        <td>
-                            <?php echo $dato-> ap_materno; ?>
-                        </td>
-                        <td>
-                            <?php echo $dato-> nombres; ?>
-                        </td>
-                        <td>
-                            <?php echo $dato-> ex_parcial; ?>
-                        </td>
-                        <td>
-                            <?php echo $dato-> ex_final; ?>
-                        </td>
-                        <td>
-                            <?php echo ($dato->ex_final + $dato->ex_parcial) / 2; ?>
-                        </td>
-                        <td><a href="editar.php?id=<?php echo $dato->id_alumno; ?> ">Editar</a></td>
-                        <td><a href="eliminar.php?id=<?php echo $dato->id_alumno; ?>">Eliminar</a></td>
-                    </tr>
-                </div>
-                <?php
-              }
-              ?>
-        </table>
-    </center>
-    <center>
+    include 'template/header.php';
+    include 'template/footer.php'  
+?>    
         <!-- inicio insert -->
+        <center>
+    <body>
         <hr>
         <h3>Ingresar alumnos:</h3>
         <form method="POST" action="insertar.php">
@@ -96,14 +47,11 @@
                     <td><input type="submit" value="INGRESAR ALUMNO" id=""></td>
                 </tr>
             </table>
+    </body>
             <!-- fin insert-->
     </center>
 </body>
-
 </html>
-
-
-
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
